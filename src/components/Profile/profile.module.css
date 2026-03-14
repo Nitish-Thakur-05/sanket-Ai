@@ -1,0 +1,250 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 800px; /* Keep profile centered and not too stretched */
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Header Section */
+.headerCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  border: 1px solid #f1f5f9;
+}
+
+.topSection .headerCard {
+  border-radius: 16px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #a78bfa, #f43f5e);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(244, 63, 94, 0.3);
+}
+
+.name {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 15px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* Stats Section */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.statCard {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  border: 1px solid #f1f5f9;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.statCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.statValue {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.valIncidents {
+  color: #fe4a5a;
+}
+.valCollisions {
+  color: #facc15;
+}
+.valSafe {
+  color: #06d6a0;
+}
+
+.statLabel {
+  font-size: 14px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* List Cards */
+.listCard {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  border: 1px solid #f1f5f9;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.listHeader {
+  font-size: 14px;
+  font-weight: 700;
+  color: #9ca3af;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.itemIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4b5563;
+  flex-shrink: 0;
+}
+
+.itemIcon.iconBlue {
+  color: #3b82f6;
+  background-color: #eff6ff;
+}
+.itemIcon.iconRed {
+  color: #ef4444;
+  background-color: #fef2f2;
+}
+.itemIcon.iconGray {
+  color: #6b7280;
+  background-color: #f3f4f6;
+}
+.itemIcon.iconGreen {
+  color: #10b981;
+  background-color: #ecfdf5;
+}
+
+.itemContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.itemTitle {
+  font-size: 13px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.itemSubtitle {
+  font-size: 16px;
+  color: #111827;
+  font-weight: 600;
+}
+
+.itemRight {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #06d6a0;
+}
+
+.itemRight .muiIcon {
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.muiIcon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.loading, .error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.error {
+  color: #ef4444;
+}
+
+/* Warning Note */
+.topSection {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.warningNote {
+  background-color: #fffbeb;
+  border: 1px solid #fef3c7;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 0;
+}
+
+.warningIcon {
+  color: #f59e0b;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.warningText {
+  color: #92400e;
+  font-size: 13.5px;
+  line-height: 1.5;
+  font-weight: 500;
+}

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fe4a59;
+}
+
+::selection {
+  background-color: #fe4a596d;
+  color: black;
+}
+
+#root {
+  --bodyColor: #f4f6f8;
+  background-color: var(--bodyColor);
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 776px) {
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
+}

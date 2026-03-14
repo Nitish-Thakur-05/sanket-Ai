@@ -1,0 +1,121 @@
+.layoutContainer {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--bodyColor);
+}
+
+.mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: auto;
+  position: relative;
+  /* subtle nice inner shadow */
+  box-shadow: inset 0 6px 15px rgba(0, 0, 0, 0.02);
+}
+
+.mobileHeader {
+  display: none; /* hidden on large desktop by default */
+}
+
+.pageWrapper {
+  padding: 40px; /* default desktop padding */
+}
+
+/* Base properties for the toggle button */
+.menuButton {
+  display: none;
+  background: #fff1f2;
+  color: #fe4a5a;
+  border: none;
+  padding: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.menuButton:hover {
+  background: #ffe4e6;
+}
+
+.menuButton .menuIcon {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 768px) {
+  /* Show and style the full header gracefully on mobile */
+  .mobileHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 16px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Soft drop shadow bounding it to top */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .pageWrapper {
+    padding: 20px 16px; /* shrink padding gracefully for mobile contents */
+  }
+
+  .menuButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobileBrand {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111827;
+  }
+
+  .mobileBrand span {
+    color: #fe4a5a; /* Theme pink */
+  }
+
+  .profileButton {
+    background: none;
+    border: none;
+    color: #6b7280;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profileButton .profileIcon {
+    font-size: 28px;
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(17, 24, 39, 0.4);
+  z-index: 19;
+  backdrop-filter: blur(2px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay.visible {
+  display: block;
+  opacity: 1;
+}
+
+@media (min-width: 769px) {
+  .overlay {
+    display: none !important;
+  }
+}

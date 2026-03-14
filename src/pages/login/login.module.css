@@ -1,0 +1,75 @@
+.page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 100%;
+  max-width: clamp(360px, 25vw, 700px);
+  background: #ffffff;
+  padding: clamp(40px, 3.5vw, 80px) clamp(35px, 3vw, 70px);
+  border-radius: clamp(10px, 0.8vw, 20px);
+  box-sizing: border-box;
+
+  /* smooth professional shadow */
+  box-shadow: 0 clamp(8px, 0.6vw, 16px) clamp(30px, 2.5vw, 60px)
+    rgba(0, 0, 0, 0.08);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: clamp(25px, 2vw, 45px);
+  font-size: clamp(24px, 2.2vw, 42px);
+  font-weight: 600;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(18px, 1.5vw, 32px);
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(6px, 0.5vw, 12px);
+}
+
+.inputGroup label {
+  font-size: clamp(14px, 1.1vw, 20px);
+  font-weight: 500;
+  color: #444;
+}
+
+.inputGroup input {
+  padding: clamp(10px, 0.8vw, 20px);
+  border-radius: clamp(6px, 0.5vw, 12px);
+  border: 1px solid #ddd;
+  font-size: clamp(14px, 1.1vw, 20px);
+  transition: border 0.2s;
+}
+
+.inputGroup input:focus {
+  outline: none;
+  border-color: #fe4a5a;
+}
+
+.button {
+  padding: clamp(11px, 1vw, 22px);
+  border: none;
+  background: #fe4a5a;
+  color: white;
+  font-size: clamp(15px, 1.2vw, 22px);
+  border-radius: clamp(6px, 0.5vw, 12px);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.button:hover {
+  background: #e11d48;
+}

@@ -1,0 +1,205 @@
+.dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-height: calc(100vh - 120px);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.statCard {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  border: 1px solid #f1f5f9;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.statCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.statIcon {
+  font-size: 32px;
+}
+
+.statInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.statValue {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.statLabel {
+  font-size: 14px;
+  color: #6b7280;
+  letter-spacing: 0.3px;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+/* Colors for specific digits */
+.valCollisions {
+  color: #fe4a5a;
+}
+.valNearMisses {
+  color: #facc15;
+}
+.valSafeTrips {
+  color: #06d6a0;
+}
+.valVehicles {
+  color: #4f46e5;
+}
+
+.chartsSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.chartCard {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  border: 1px solid #f1f5f9;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 380px;
+}
+
+.chartHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.chartContent {
+  width: 100%;
+  flex: 1;
+  position: relative;
+}
+
+/* Download Banner Setup */
+.downloadBanner {
+  background: linear-gradient(135deg, #fff1f2 0%, #ffffff 100%);
+  border-radius: 16px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  border: 1px solid #ffe4e6;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bannerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.bannerTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bannerTitle svg {
+  color: #fe4a5a;
+}
+
+.bannerDesc {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.downloadButton {
+  background-color: #fe4a5a;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(254, 74, 90, 0.2);
+}
+
+.downloadButton:hover {
+  background-color: #e11d48;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(254, 74, 90, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .statCard {
+    padding: 16px;
+    gap: 12px;
+    border-radius: 12px;
+  }
+
+  .statIcon {
+    font-size: 24px;
+  }
+
+  .statValue {
+    font-size: 20px;
+  }
+
+  .statLabel {
+    font-size: 12px;
+  }
+
+  .chartCard {
+    padding: 18px;
+    height: 300px;
+  }
+}
