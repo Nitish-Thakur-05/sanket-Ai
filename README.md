@@ -12,37 +12,41 @@
 ## ✨ Key Features
 
 ### 📊 Dynamic Analytics Dashboard
-*   **Real-time Stats**: Track total collisions, near collisions, and safe trips at a glance.
-*   **Visual Insights**: Interactive distribution donut charts and dynamic bar charts representing recent driving trends.
-*   **Mobile Connectivity**: Quick-access banner to download the companion mobile app for on-the-go tracking.
+
+- **Real-time Stats**: Track total collisions, near collisions, and safe trips at a glance.
+- **Visual Insights**: Interactive distribution donut charts and dynamic bar charts representing recent driving trends.
+- **Mobile Connectivity**: Quick-access banner to download the companion mobile app for on-the-go tracking.
 
 ### 📜 Incident History & Intelligence
-*   **Comprehensive Log**: A searchable and filterable history of all detected incidents.
-*   **Deep-Dive Analysis**: Detailed information for every incident, including vehicle counts, pedestrian involved, and AI-generated narratives.
-*   **Integrated Mapping**: View the exact location of incidents with embedded Google Maps.
+
+- **Comprehensive Log**: A searchable and filterable history of all detected incidents.
+- **Deep-Dive Analysis**: Detailed information for every incident, including vehicle counts, pedestrian involved, and AI-generated narratives.
+- **Integrated Mapping**: View the exact location of incidents with embedded Google Maps.
 
 ### 📄 Professional Reporting
-*   **In-Modal PDF Viewer**: View detailed incident reports without leaving the application.
-*   **PDF Generation**: Access and download formal PDF reports for insurance or safety audits.
+
+- **In-Modal PDF Viewer**: View detailed incident reports without leaving the application.
+- **PDF Generation**: Access and download formal PDF reports for insurance or safety audits.
 
 ### 🔒 Secure & Personalized
-*   **User Authentication**: Secure login system with role-based access.
-*   **Personalized Profiles**: Tracks incidents specific to individual users and vehicles.
-*   **Protected Routing**: Ensures data privacy through secure navigation guards.
+
+- **User Authentication**: Secure login system with role-based access.
+- **Personalized Profiles**: Tracks incidents specific to individual users and vehicles.
+- **Protected Routing**: Ensures data privacy through secure navigation guards.
 
 ---
 
 ## 🛠️ Technology Stack
 
-| Category | technology |
-| :--- | :--- |
-| **Frontend Framework** | React 19 (Vite) |
-| **State & Database** | Firebase Firestore |
-| **Styling** | Vanilla CSS (CSS Modules) & Material UI |
-| **Navigation** | React Router 7 |
-| **Visualizations** | Recharts |
-| **Notifications** | React Toastify |
-| **Icons** | MUI Icons Material |
+| Category               | technology                              |
+| :--------------------- | :-------------------------------------- |
+| **Frontend Framework** | React 19 (Vite)                         |
+| **State & Database**   | Firebase Firestore                      |
+| **Styling**            | Vanilla CSS (CSS Modules) & Material UI |
+| **Navigation**         | React Router 7                          |
+| **Visualizations**     | Recharts                                |
+| **Notifications**      | React Toastify                          |
+| **Icons**              | MUI Icons Material                      |
 
 ---
 
@@ -67,23 +71,28 @@ sanket-ai/
 ## 🚀 Getting Started
 
 ### Prerequisites
-*   [Node.js](https://nodejs.org/) (v18 or higher)
-*   [npm](https://www.npmjs.com/)
+
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- [npm](https://www.npmjs.com/)
 
 ### Installation
+
 1.  **Clone the repository**
+
     ```bash
     git clone https://github.com/your-username/sanket-ai.git
     cd sanket-ai
     ```
 
 2.  **Install dependencies**
+
     ```bash
     npm install
     ```
 
 3.  **Configure Environment Variables**
     Create a `.env` file in the root directory and add your Firebase credentials:
+
     ```env
     VITE_FIREBASE_API_KEY=your_api_key
     VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain
@@ -101,14 +110,11 @@ sanket-ai/
 ---
 
 ## 📱 Mobile App
+
 The Sanket AI ecosystem includes a mobile application for real-time driver assistance. You can find the latest distribution here: [Get the App](https://drive.google.com/file/d/1tgJ_5mjRK9zhAfNlhKZlv2QnIxYsrwx8/view?usp=sharing)
 
 ---
 
-## 🤝 Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
-
----
-
 ## 📄 License
+
 This project is private and proprietary. Copyright © 2026 Sanket AI.

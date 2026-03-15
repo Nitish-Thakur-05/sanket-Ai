@@ -8,12 +8,6 @@ import { getFirestore } from "firebase/firestore";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  // apiKey: "AIzaSyB3jv0ue-wy39YSu5WzLcP0wvr4yZBAP7w",
-  // authDomain: "sanket-ai-2d633.firebaseapp.com",
-  // projectId: "sanket-ai-2d633",
-  // storageBucket: "sanket-ai-2d633.firebasestorage.app",
-  // messagingSenderId: "271979631151",
-  // appId: "1:271979631151:web:aeaae9e8a09f6d105f2cda",
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
   projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
